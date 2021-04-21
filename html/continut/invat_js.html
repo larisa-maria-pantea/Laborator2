@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="stil.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico.ico" type="image/x-icon">
+  <script src="js/script.js"></script>
+        
+        <script src="js/persoane.js"></script>
+  
+</head> 
+<body>
+    <header><h2>Invat JS</h2></header>
+    <section>
+      <nav>
+          <ul>
+            <li><a href="index.html"><b>Home</b></a>
+              <li><a href="despre_html.html">Informații</a>
+                  <li><a href="inregistreaza.html">Formular</a></li>
+                  <li><a href="video.html">Video</a></li>
+                  <li><a href="Desen.html">Desen</a></li>
+          </ul>
+        </nav>
+  <article>
+<article>
+<div class="layouts">
+    <div id="layout1">Layout 1: <button onclick="fourbyone()" id="fourbyone">4x1</button></div>
+    <div id="layout2">Layout 2: <button onclick="onebyfour()" id="onebyfour">1x4</button></div>
+    <div id="layout3">Layout 3: <button onclick="twobytwo()" id="twobytwo">2x2</button> </div>
+ </div>
+<aside class="onebyfour twobytwo fourbyone " id="aside" style="clear:left">
+    <!-- <h2>Secțiuni:</h2> -->
+    <section id="section1" class="margine">
+        <heading>
+            <h4>Sectiunea 1:</h4>
+        </heading>
+<button id="detalii" type="button" onclick="afisareDetalii()">Vezi detaliile</button>
+<p id="data"></p>
+<p id="browser"></p>
+<p id="version_browser"></p>
+<p id="URL"></p>
+<p id="locationURL"></p>
+<p id="os"></p>
+<p id="loc"></p>
+</section>
+
+<section id="section2" class="margine">
+<h4>Secțiunea 2:</h4>
+<div>Completați cele 8 numere:</div>
+<div class="casute">
+  <form id="lotoform">
+    <label for="c1"></label>
+    <input type="text" pattern="[A-Z0-9]{2}" id="c1" name="c1" /><br />
+    <label for="c2"></label>
+    <input type="text" pattern="[A-Z0-9]{2}" id="c2" name="c2" /><br />
+    <label for="c3"></label>
+    <input type="text" pattern="[A-Z0-9]{2}" id="c3" name="c3" /><br />
+    <label for="c4"></label>
+    <input type="text" pattern="[A-Z0-9]{2}" id="c4" name="c4" /><br />
+    <label for="c5"></label>
+    <input type="text" pattern="[A-Z0-9]{2}" id="c5" name="c5" /><br />
+    <label for="c6"></label>
+    <input type="text" pattern="[A-Z0-9]{2}" id="c6" name="c6" /><br />
+    <label for="c7"></label>
+    <input type="text" pattern="[A-Z0-9]{2}" id="c7" name="c7" /><br />
+    <label for="c8"></label>
+    <input type="text" pattern="[A-Z0-9]{2}" id="c8" name="c8" /><br />
+  </form>
+</div>
+<button id="lotobutton" onclick="loto()">
+  Generează numerele câștigătoare
+</button>
+<p id="loto"></p>
+<p id="loto2"></p>
+</section>
+
+<section id="section3" class="margine">
+  <h4>Secțiunea 3:</h4>
+  <p>Alegeți culorile :</p>
+  <form id="colorpicker">
+    <label for="fill">Culoarea de umplere:</label>
+    <input type="color" id="fillcolor" value="#ff0000" name="fillcolor" />
+    <br /><br />
+    <label for="stroke">Culoarea marginii:</label>
+    <input
+      type="color"
+      id="strokecolor"
+      name="strokecolor"
+      value="#0000ff"
+    />
+  </form>
+  <br />
+  <canvas id="canvas" width="600" height="400" onclick="drawCanvas()">
+  </canvas>
+</section>
+
+
+</aside>
+</article>
+
+
+</body>
+
+</html>
